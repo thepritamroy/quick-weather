@@ -1,0 +1,27 @@
+
+.search-dropdown{
+  position: absolute;
+  width: 100%;
+  left: 30px;
+  top: 55px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: black;
+  background-color: white;
+}
+
+.dropdown-place{
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  border-radius: 7px;
+}
+
+.dropdown-place:hover{
+  background: hsl(0, 0%, 92%);
+  transform: scale(1.1);
+}

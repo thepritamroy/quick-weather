@@ -1,0 +1,32 @@
+
+.theme-change {
+  background-color: hsl(0, 0%, 96%);
+  color: black;
+  nav{
+    background: hsl(0, 0%, 90%);
+    color: black;
+    .mode-changer {
+      background: hsl(0, 0%, 95%);
+    }
+    .search-bar .city-name{
+      border: 1px solid black;
+      color: black;
+    }
+  }
+  .temp-container{
+    border: 1px solid black;
+  }
+  .other-info-container{
+    border: 1px solid black;
+}
+
+  .daily-forecast{
+    border: 1px solid black;
+  }
+  .daily-forecast:hover{
+    background: hsl(0, 0%, 90%);
+  }
+  .forecast-dropdown .other-info .text{
+    color: hsl(0, 0%, 30%);
+  }
+}
