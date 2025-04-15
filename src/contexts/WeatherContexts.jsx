@@ -24,6 +24,7 @@ export function WeatherProvider({children}){
       if(!cityName) return
 
       const loadData = await handleApi(cityName)
+      if(loadData.error) throw new Error()
       setWeatherData(()=>loadData);
     }catch(error){
       console.log(error)

@@ -10,13 +10,12 @@ function Weather(){
 
   const {weatherData,loading,error,dailyForecastData} = useContext(WeatherContext);
   
-console.log(dailyForecastData)
+
   return (
     <div className="main-conatiner">
 
       {error ? <h2 className='error'>{error}😔</h2> : "" }
       {loading ? <h2 className='loading'>Loading...🙂</h2> : "" }
-      {weatherData.error && !loading?<h2 className='loading'>{weatherData.error.message}</h2>:''}
 
       {JSON.stringify(weatherData) !== "{}" && !weatherData.error && !error && !loading? 
     <div>

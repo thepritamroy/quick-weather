@@ -1,6 +1,5 @@
 
-
-const API_KEY = process.env.API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export async function handleApi(city){
   try{
@@ -16,9 +15,8 @@ export async function handleApi(city){
   
 }
 
-handleApi('london united kingdom')
 
-const API_KEY2 = 'r83gu3idmmexbc2l033bn4uacp2bxitynnumxav0'
+const API_KEY2 = import.meta.env.VITE_API_KEY_CITY;
 
 export async function handlePLaceApi(city){
   try{
@@ -36,8 +34,8 @@ export async function handleDailyForecast(city){
 
   // const encodedCity = encodeURIComponent(city)
   try{
-    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=7&aqi=no
-`)
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=7&aqi=no`)
+    
     const data = await response.json();
 
     return data.forecast.forecastday
