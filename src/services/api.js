@@ -1,6 +1,6 @@
 
 
-const API_KEY = '69a524bcbf224cc0a6084227242209';
+const API_KEY = process.env.API_KEY;
 
 export async function handleApi(city){
   try{
